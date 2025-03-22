@@ -1,0 +1,32 @@
+[project]
+name = "riveter-scorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "paskn", email = "pashakhin@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.2.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.28.2",
+    "epc>=0.0.5",
+    "orjson>=3.10.15",
+    "packaging>=24.2",
+    "paramiko>=3.5.1",
+    "pytest>=8.3.5",
+    "rapidfuzz>=3.12.2",
+    "ruff>=0.11.0",
+    "setuptools>=77.0.3",
+    "sexpdata>=1.0.2",
+    "six>=1.17.0",
+    "watchdog>=6.0.0",
+]
