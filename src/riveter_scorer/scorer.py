@@ -1,28 +1,4 @@
-from pprint import pprint as print
-import os
-import json
-import re
 import pandas as pd
-
-
-def get_dicts_from_txt(file_path):
-    namespace = {}
-    # Read and execute the .txt file
-    with open(file_path, 'r') as file:
-        content = file.read()
-    # Fix single quotes in strings containing apostrophes (replace them with double quotes)
-        # Escape single quotes inside strings
-    # content = re.sub(r"(['\"])(.*?)(\1)", lambda m: m.group(0).replace("'", "\"") if "'" in m.group(0) else m.group(0), content)
-    # "\'s\s"g
-    # handle possesives with 's
-    content = re.sub(r"\'s\s", r' ', content)
-    # handle won't
-    content = re.sub(r"won\'t.\w+", r"will_not", content)
-    exec(content, namespace)
-    # Access the dictionaries from the namespace
-    nsubj_verb_count_dict = namespace['nsubj_verb_count_dict']
-    dobj_verb_count_dict = namespace['dobj_verb_count_dict']
-    return nsubj_verb_count_dict, dobj_verb_count_dict
 
 
 def load_sap_lexicon_as_dict(lexicon_path, dimension='power'):
@@ -66,8 +42,6 @@ def load_sap_lexicon_as_dict(lexicon_path, dimension='power'):
             verb_score_dict[verb] = label_dict[label]
         else:
             verb_score_dict[verb] = {'agent': 0, 'theme': 0} # handle empty values
-
-
 
     return verb_score_dict
 
