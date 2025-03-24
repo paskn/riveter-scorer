@@ -1,0 +1,27 @@
+nsubj_verb_count_dict = {
+    ('i', 'have'): 1,
+    ('i', 'feel'): 1,
+    ('she', 'save'): 1,
+    ('car', 'hit'): 1,
+    ('i', 'thank'): 1,
+    ('doctor', 'fix'): 1,
+    ('susan', 'arrive'): 1,
+    ('mary', 'go'): 1,
+    ('mary', 'thank'): 1,
+    ('doctor', 'call'): 1,
+    ('doctor', 'reply'): 1,
+    ('it', 'be'): 1,
+    ('jack', 'break'): 1,
+    }
+dobj_verb_count_dict ={
+    ('i', 'call'): 1,
+    ('i', 'pick'): 1,
+    ('i', 'save'): 1,
+    ('tree', 'hit'): 1,
+    ('i', 'fix'): 1,
+    ('doctor', 'thank'): 1,
+    ('doctor', 'call'): 1,
+    ('mary', 'call'): 1,
+    ('doctor', 'thank'): 1,
+    ('vase', 'break'): 1,
+    }
