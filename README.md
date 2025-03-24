@@ -5,7 +5,13 @@ given a lexicon.
 
 We composed `riveter-scorer` for convinience of another project that
 relies on the research that went into `riveter-nlp` but has different
-needs. 
+needs.
+
+## Install
+
+```{shell}
+uv add https://github.com/paskn/riveter-scorer.git
+```
 
 ## Development
 
